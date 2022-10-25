@@ -25,7 +25,28 @@ double lies_gleitkommazahl();
 
 
 void alter_von_alan_turing_erraten() {
-  int geburtsdatum
+  int birthYear = 1912; //
+  int currentYear = 2022; //
+  int alter = currentYear - birthYear;
+
+  int rateversuche = 0; //
+  int guess = -999;
+  drucke_text("Wie alt wäre Alan Turing jetzt?");
+  while (guess != alter) {
+    drucke_text(""); //
+    drucke_text("Deine Schätzung:");
+    guess = lies_ganzzahl();
+    rateversuche++;
+
+    if (guess > alter)  // theoretisch {} nach if-Statement, aber bei 1 Anweisung vernachlässigbar?
+      drucke_text("Nope, Alan turing wäre jetzt jünger.");
+    else if (guess < alter)
+      drucke_text("Ne, Alan Turing wäre jetzt älter");
+    else {  // falls nicht < oder >, kann der guess nur = wie alter sein
+      drucke_text("Nice, genau so alt wäre Alan Turing jetzt!");
+      printf("Du hast übrigens %i Versuche gebraucht", rateversuche);
+    } 
+  }
 }
 
 
