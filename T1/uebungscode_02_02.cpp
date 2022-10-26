@@ -25,11 +25,12 @@ double lies_gleitkommazahl();
 
 
 void ablauf_diagram_1(){  //TODO
-  double x = lies_gleitkommazahl();
+  double x = lies_gleitkommazahl();  // oder falls x als :in: \mathbb{N} gewünscht: lies_ganzzahl();
   x *= x;  // quadrieren
   drucke_kommazahl(x);
 }
 
+/* modulo 2 */
 void ablauf_diagram_2(){  //TODO
   double x = lies_gleitkommazahl();
 
@@ -83,7 +84,7 @@ void programm_3() {  //TODO
 
   for (int i = 0; i <= n; i++) {
     s += zahlen[i];
-  }
+  }  // opt. auch mit while-Schleife möglich
 
   drucke_kommazahl(s/(n+1));
 }
@@ -116,7 +117,7 @@ int main() {
   // programm_1();
   // programm_2();
   // programm_3();
-  // programm_4();
+  programm_4();
 }
 
 

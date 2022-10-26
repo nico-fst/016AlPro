@@ -55,7 +55,6 @@ double lies_gleitkommazahl() {
 
 
 
-
 void nr4_3() {
     drucke_text("Natürliche Zahl gröper gleich 1:");
     int n = lies_ganzzahl();
