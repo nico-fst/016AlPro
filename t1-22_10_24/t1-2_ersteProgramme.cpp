@@ -67,7 +67,7 @@ chen Konzepte um und was gibt es bei der Sprachsyntax zu beachten?";
   for (int i = 0; i < text.length(); i++) {
     if (text[i] == '.' || text[i] == '?' || text[i] == '!')  // oder statt || "or"
       s++;  // '.', '?' und '!'  in s zählen
-    i += 1;  // opt. auch mit while-loop möglich
+      // opt. auch mit while-loop möglich
   }
 
   drucke_ganzzahl(s);
@@ -80,13 +80,12 @@ void programm_3() {  //TODO
   // Zählervariable i erst in for-Loop deklariert/gebraucht
   double s = 0;
   int n = zahlen.size();
-  drucke_ganzzahl(n);
 
-  for (int i = 0; i <= n; i++) {
+  for (int i = 0; i < n; i++) {
     s += zahlen[i];
   }  // opt. auch mit while-Schleife möglich
 
-  drucke_kommazahl(s/(n+1));
+  drucke_kommazahl(s/n);
 }
 
 
@@ -116,8 +115,8 @@ int main() {
   // ablauf_diagram_2();
   // programm_1();
   // programm_2();
-  // programm_3();
-  programm_4();
+  programm_3();
+  // programm_4();
 }
 
 

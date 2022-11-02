@@ -32,7 +32,7 @@ void alter_von_alan_turing_erraten() {
   int rateversuche = 0; //
   int guess = -999;
   drucke_text("Wie alt wäre Alan Turing jetzt?");
-  while (guess != alter) {
+  while (guess != alter) {  // lieber do while
     drucke_text(""); //
     drucke_text("Deine Schätzung:");
     guess = lies_ganzzahl();
@@ -44,7 +44,7 @@ void alter_von_alan_turing_erraten() {
       drucke_text("Ne, Alan Turing wäre jetzt älter");
     else {  // falls nicht < oder >, kann der guess nur = wie alter sein
       drucke_text("Nice, genau so alt wäre Alan Turing jetzt!");
-      printf("(Funfact: Du hast übrigens %i Versuche gebraucht)", rateversuche);
+      printf("(Funfact: Du hast übrigens %i Versuche gebraucht)\n", rateversuche);
     } 
   }
 }
